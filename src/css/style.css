@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 05px rgb(13, 13, 13);
+  background-color: rgba(10, 10, 10, 0.942);
+  color: rgba(248, 248, 243, 0.546);
+  line-height: 1.6;
+}
+
+.apresentacao {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.horario {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topo {
+  background-color: #000;
+  text-align: center;
+  padding: 05px;
+}
+
+
+.logo-central {
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  margin-bottom: 70px;
+}
+
+.logo-central img {
+  align-items: justify;
+  height: 2px; /* aumenta o tamanho */
+  width: 1080;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.menu a {
+  color: #f2bf07bd;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #fcfcfbed;
+}
+
+.banner {
+  background: url('img/banner.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.conteudo-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.conteudo-banner p {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color: rgb(2, 2, 2);
+  background-color: rgb(246, 245, 245);
+  padding: 03px 00px;
+  border-radius: 03px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #070707;
+}
+
+.servicos {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.item {
+  background-color: #302e2e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 01px;
+}
+
+.nome .do .corte {
+  font-family: 'Poppins', sans-serif;
+  color: #f4f4f4;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.agendar,
+.contato {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.agendar h2,
+.contato h2 {
+  margin-bottom: 15px;
+  color: #fcfafa;
+}
+
+.rodape {
+  background-color: #e2ac07d4;
+  color: #050505;
+  text-align: center;
+  padding: 17px;
+  font-size: 14px;
+}
+
+.rodape2 {
+  background-color:#e2ac07d4;
+  color: 050505;
+  text-align: center;
+  padding: 10px;
+  font-size: 09px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .conteudo-banner h1 {
+    font-size: 28px;
+  }
+
+  .botao {
+    font-size: 16px;
+  }
+
+  .item {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .icones-flutuantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+  }
+  
+  .icones-flutuantes .icone {
+    background-color: #25D366; /* WhatsApp verde */
+    color: white;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  
+  .icones-flutuantes .instagram {
+    background-color: #E1306C; /* Rosa do Instagram */
+  }
+  
+  .icones-flutuantes .icone:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Ajustes em telas menores */
+  @media (max-width: 768px) {
+    .icones-flutuantes {
+      right: 15px;
+      bottom: 15px;
+    }
+  
+    .icones-flutuantes .icone {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+  
+  
+
+  /* Estilo do lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+  
+  
+}
