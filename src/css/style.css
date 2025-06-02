@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-shadow: 0 0 05px rgb(13, 13, 13);
   background-color: rgba(10, 10, 10, 0.942);
-  color: rgb(255, 249, 249);
+  color: rgba(248, 248, 243, 0.546);
   line-height: 1.6;
 }
 
@@ -269,25 +269,24 @@ a {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(7, 7, 7, 0.2);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease;
 }
 
 .tabela {
   align-items: center;
-  width: 250px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  margin-top: 20px;}
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  }
+ 
 
-.tabela img{
-  width: 140%;
-  height: auto;
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  margin-bottom: 10px;  
+.tabela img {
+   max-width: 50%;
+  height: auto;  
+  display: inline-block;
+  border-radius: 30px;
+ 
 }
 .tabela th,
 .tabela td {
@@ -300,6 +299,6 @@ a {
   font-weight: bold;}
 
 
-
-  
 }
+  
+
