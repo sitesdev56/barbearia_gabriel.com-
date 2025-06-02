@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-shadow: 0 0 05px rgb(13, 13, 13);
   background-color: rgba(10, 10, 10, 0.942);
-  color: rgba(248, 248, 243, 0.546);
+  color: rgb(255, 249, 249);
   line-height: 1.6;
 }
 
@@ -165,14 +165,24 @@ a {
   text-align: center;
   padding: 17px;
   font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
-
+.rodape a {
+  color: #050505;
+  text-decoration: none;
+  font-weight: bold;
+}
 .rodape2 {
   background-color:#e2ac07d4;
   color: 050505;
   text-align: center;
   padding: 10px;
   font-size: 09px;
+  position: relative;
+  bottom: 0;
+
 }
 
 @media (max-width: 768px) {
@@ -190,6 +200,8 @@ a {
   }
 
   .item {
+    align-items: center;
+    text-align: center;
     width: 90%;
     max-width: 300px;
   }
@@ -257,10 +269,37 @@ a {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(7, 7, 7, 0.2);
   transition: transform 0.3s ease;
 }
 
-  
+.tabela {
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 20px;}
+
+.tabela img{
+  width: 140%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;  
+}
+.tabela th,
+.tabela td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.tabela th {
+  background-color: #f2f2f2;
+  font-weight: bold;}
+
+
+
   
 }
