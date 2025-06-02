@@ -274,19 +274,24 @@ a {
 }
 
 .tabela {
-  align-items: center;
-  display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  }
- 
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 20px;}
 
-.tabela img {
-   max-width: 50%;
-  height: auto;  
-  display: inline-block;
-  border-radius: 30px;
- 
+.tabela img{
+flex-direction: column;
+  width: 140%;
+  height: auto;
+  border-radius: 50px;
+  align-items: calc(100% - 50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;  
 }
 .tabela th,
 .tabela td {
@@ -299,6 +304,6 @@ a {
   font-weight: bold;}
 
 
-}
-  
 
+  
+}
